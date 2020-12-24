@@ -1,0 +1,15 @@
+{
+    "user_name" : "User Name",
+    "password": "Password",
+    "phone": "Phone",
+    "confirm_password": "Confirm Password",
+    "email": "Email",
+    "login": "Login",
+    "dont_have_account": "Don't have account",
+    "click_here": "Click here",
+    "forgot_password": "Forgot password?",
+    "user": "User",
+    "phone_number": "Phone number",
+    "already_have_account": "Already have Account",
+    "sign_up": "Sign Up"
+}

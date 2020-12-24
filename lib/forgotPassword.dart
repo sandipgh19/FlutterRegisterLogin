@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:registerLogin/localization.dart';
 
 class ForgotPassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    AppLocalizations appLocalization = AppLocalizations.of(context);
     return Scaffold(
         body: Center(
             child: Column(
@@ -17,7 +19,7 @@ class ForgotPassword extends StatelessWidget {
                       borderRadius:
                           const BorderRadius.all(const Radius.circular(18.0))),
                   filled: true,
-                  hintText: "User name"),
+                  hintText: appLocalization.getText("user_name")),
             ),
           )
         ])));

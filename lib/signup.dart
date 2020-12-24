@@ -1,9 +1,11 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:registerLogin/localization.dart';
 
 class SignUpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    AppLocalizations appLocalization = AppLocalizations.of(context);
     return Scaffold(
       body: Center(
         child: ListView(
@@ -17,7 +19,7 @@ class SignUpPage extends StatelessWidget {
                         borderRadius: const BorderRadius.all(
                             const Radius.circular(18.0))),
                     filled: true,
-                    hintText: "User name"),
+                    hintText: appLocalization.getText("user_name")),
               ),
             ),
             new Container(
@@ -29,7 +31,7 @@ class SignUpPage extends StatelessWidget {
                       borderRadius:
                           const BorderRadius.all(const Radius.circular(18.0))),
                   filled: true,
-                  hintText: "Phone number",
+                  hintText: appLocalization.getText("phone_number"),
                 ),
               ),
             ),
@@ -42,7 +44,7 @@ class SignUpPage extends StatelessWidget {
                         borderRadius: const BorderRadius.all(
                             const Radius.circular(18.0))),
                     filled: true,
-                    hintText: "Email"),
+                    hintText: appLocalization.getText("email")),
               ),
             ),
             new Container(
@@ -54,7 +56,7 @@ class SignUpPage extends StatelessWidget {
                         borderRadius: const BorderRadius.all(
                             const Radius.circular(18.0))),
                     filled: true,
-                    hintText: "Password"),
+                    hintText: appLocalization.getText("password")),
               ),
             ),
             new Container(
@@ -66,7 +68,7 @@ class SignUpPage extends StatelessWidget {
                         borderRadius: const BorderRadius.all(
                             const Radius.circular(18.0))),
                     filled: true,
-                    hintText: "Confirm password"),
+                    hintText: appLocalization.getText("confirm_password")),
               ),
             ),
             new Container(
@@ -79,7 +81,7 @@ class SignUpPage extends StatelessWidget {
                   color: Colors.orange,
                   onPressed: () {},
                   child: Text(
-                    'Sign up',
+                    appLocalization.getText("sign_up"),
                     style: TextStyle(color: Colors.white, fontSize: 16),
                   )),
             ),
@@ -89,11 +91,11 @@ class SignUpPage extends StatelessWidget {
                     textAlign: TextAlign.center,
                     text: TextSpan(children: <TextSpan>[
                       TextSpan(
-                        text: "Already have Account ",
+                        text: appLocalization.getText("already_have_account") + ' ',
                         style: TextStyle(color: Colors.black87, fontSize: 16),
                       ),
                       TextSpan(
-                        text: "Click here",
+                        text: appLocalization.getText("click_here"),
                         style: TextStyle(
                             color: Colors.orange,
                             fontSize: 16,
