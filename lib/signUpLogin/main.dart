@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:registerLogin/forgotPassword.dart';
+import 'package:registerLogin/crackHome/crackHome.dart';
+import 'package:registerLogin/signUpLogin/forgotPassword.dart';
 import 'package:registerLogin/localization.dart';
-import 'package:registerLogin/signup.dart';
+import 'package:registerLogin/signUpLogin/signup.dart';
 import 'package:flutter/gestures.dart';
 
 void main() {
@@ -114,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: new RoundedRectangleBorder(
                     borderRadius: new BorderRadius.circular(30.0)),
                 color: Colors.orange,
-                onPressed: () {},
+                onPressed: () {_navigateToCrackHomeScreen(context);},
                 child: Text(
                   appLocalization.getText("login"),
                   style: TextStyle(color: Colors.white, fontSize: 16),
@@ -164,5 +165,10 @@ class _MyHomePageState extends State<MyHomePage> {
   void _navigateToForgotPasswordScreen(BuildContext context) {
     Navigator.of(context)
         .push(MaterialPageRoute(builder: (context) => ForgotPassword()));
+  }
+
+  void _navigateToCrackHomeScreen(BuildContext context) {
+    Navigator.of(context)
+        .pushAndRemoveUntil(MaterialPageRoute(builder: (context) => CrackHomeDashboard()), ModalRoute.withName("/Home"));
   }
 }

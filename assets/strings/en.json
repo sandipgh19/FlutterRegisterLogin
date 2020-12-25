@@ -11,5 +11,11 @@
     "user": "User",
     "phone_number": "Phone number",
     "already_have_account": "Already have Account",
-    "sign_up": "Sign Up"
+    "sign_up": "Sign Up",
+    "home": "Home",
+    "my_favorite": "My Favorite",
+    "shop_now": "Shop now",
+    "my_orders": "My Orders",
+    "account": "Account"
+
 }
